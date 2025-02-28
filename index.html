@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cassandra Bazille</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">CB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#S1">Accueil</a></li>
+                <li><a href="portfolio.html#sectionprofile">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="S1" class="intro">
+            <div class="intro-text">
+                <h1>Bonjour,</h1> <br> <h2>Je m'appelle Cassandra Bazille.</h2>
+                <p>Je suis développeuse full-stack et je recherche un stage dans une entreprise à impact. </p>
+                <div class="buttons">
+                    <button class="linkedinbutton"><div class="linkedinrow"><a href="https://www.linkedin.com/in/cassandra-bazille-206531137/" target="_blank">Voici mon<img src="Images/linkedin_logo.png" alt="Linkedin" /></a></div></button>
+                    <button class="contactbutton"> <a href="mailto:bazillecassandra@gmail.com"> Contactez moi </a> </button>  
+                   </div> 
+                </div>
+            <div class="intro-image" id="introImage">
+                <img src="Images/illustrationdeveloppeuse.png" alt="Image de profil">
+                <div class="speech-bubble" id="speechBubble">Et je suis très motivée ! 🔥</div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        
+            
+    </footer>
+</body>
+<script>
+       document.getElementById('introImage').addEventListener('mouseover', function() {
+            const bubble = this.querySelector('.speech-bubble');
+            bubble.style.opacity = '1';
+        });
+
+        document.getElementById('introImage').addEventListener('mouseout', function() {
+            const bubble = this.querySelector('.speech-bubble');
+            bubble.style.opacity = '0';
+        });
+</script>
+</html>

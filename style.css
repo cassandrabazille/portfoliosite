@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b54fb;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+  
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.intro {
+    display: flex;
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center;
+    padding: 50px;
+}
+
+.intro-text {
+    max-width: 50%;
+   
+}
+
+.intro-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: #333;
+}
+.intro-image {
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    flex: 1; /* Prendre tout l'espace restant */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.intro-image img {
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.speech-bubble {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 5%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    pointer-events: none; 
+}
+
+.social-media {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+
+}
+
+
+.github img {
+    width: 2vw;
+    height: 4vh
+}
+
+
+.project-1 img, .project-2 img, .project-3 img {
+  width: 100%;
+  height: 100%
+}
+
+
+
+.rowbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Distribue l'espace uniformément entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    width: 80%;
+    margin: auto;
+    height: 100vh; /* Ajuste la hauteur de la rowbox pour centrer verticalement */
+}
+
+.shape-rectangle {
+    background-color: white; /* Tomato */
+    width: 50%; 
+    height: 40vh; /* Height as a percentage of the viewport height */
+    margin: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: hidden; /* Ensure content is contained within the element */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+}
+
+.column1, .column2, .column3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* Centre les éléments de chaque colonne */
+    justify-content: center; /* Centre verticalement les éléments de chaque colonne */
+    width: 30%;
+    height: 75vh;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    margin: 3rem;
+    padding : 1rem;
+    border-radius: 1rem;
+}
+
+.shape-rectangle.small {
+    width: 30%;
+    height: 30vh;
+}
+
+.shape-rectangle.medium {
+    width: 50%;
+    height: 40vh;
+}
+
+.shape-rectangle.large {
+    width: 80%;
+    height: 30vh;
+
+}
+footer {
+    position: fixed; /* Fixe le footer en bas de la page */
+    bottom: 0; /* Place le footer à la position la plus basse possible */
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 5vh; /* Hauteur du footer */
+    background-color: black;
+    color: white;
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.6); /* Ajoute une ombre au-dessus du footer */
+}
+
+.linkedinbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Vous pouvez ajuster le padding selon vos besoins */
+    background-color: #0073b1; /* Vous pouvez ajuster la couleur de fond */
+    border: none;
+    border-radius: 5px; /* Ajoutez un peu de bord arrondi si vous le souhaitez */
+}
+
+.linkedinbutton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    color: white;
+}
+
+.linkedinrow img {
+    width: 20%;
+    height: 10%;
+    margin-left: 1rem
+}
+
+.linkedinrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contactbutton a, .linkedinbutton a {
+    text-decoration: none; 
+    color: white;
+}
+
+
+.indexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    font-size: 1.5rem
+}
+
+h2 {
+    font-size: 2.0rem
+}
+
