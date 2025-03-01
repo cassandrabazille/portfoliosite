@@ -50,8 +50,8 @@ nav a {
 }
 
 .intro-text {
-    max-width: 50%;
-   
+    max-width: auto;
+    margin: 5rem
 }
 
 .intro-text h1 {
@@ -94,12 +94,13 @@ button:hover {
 }
 
 .intro-image img {
-    width: 30vw;
+    width: auto;
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     display: block;
     transition: transform 0.5s ease-in-out;
+    margin: 5rem
 }
 
 .speech-bubble {
@@ -155,7 +156,6 @@ button:hover {
 
 .shape-rectangle {
     background-color: white; /* Tomato */
-    width: 50%; 
     height: 40vh; /* Height as a percentage of the viewport height */
     margin: 20px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -259,3 +259,46 @@ h2 {
     font-size: 2.0rem
 }
 
+@media (max-width: 768px) {
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .intro-text {
+        width: 100%;
+        
+    }
+
+    .intro-image img {
+        max-width: 70%;
+        margin: 0;
+    }
+
+    .rowbox {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .column1, .column2, .column3 {
+        width: 100%;
+    }
+    
+    .github img {
+        width: 100%
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0
+    }
+
+    .linkedinbutton, .contactbutton {
+        height: 6vh
+    }
+
+   
+
+}
