@@ -93,35 +93,32 @@ button:hover {
 
 }
 
+@keyframes pixelate {
+    0% {
+        filter: none;
+    }
+    100% {
+        filter: pixelate(10);
+    }
+}
+
 .intro-image img {
     width: auto;
-    height: auto;
+    height: 60vh;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     display: block;
     transition: transform 0.5s ease-in-out;
-    margin: 5rem
+    margin: 5rem;
+  
+  
 }
 
-.speech-bubble {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 5%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    font-size: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    text-align: center;
-    pointer-events: none; 
+.intro-image img .pixelate {
+    image-rendering: pixelated;
+    transform: scale(1.5);
 }
+
 
 .social-media {
     position: fixed;

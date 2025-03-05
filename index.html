@@ -21,10 +21,13 @@
     </header>
     <main>
         <section id="S1" class="intro">
-            <div class="intro-image" id="introImage">
-                <img src="Images/illustrationdeveloppeuse.png" alt="Image de profil">
+        <div class="intro-image" id="introImage">
+           <img src="Images/ordinateur.jpg" alt="image d'ordinateur">
+        </div>
+    
+                <!-- <img src="Images/illustrationdeveloppeuse.png" alt="Image de profil">
                 <div class="speech-bubble" id="speechBubble">Et je suis très motivée ! 🔥</div>
-            </div>
+            </div> --> 
             <div class="intro-text">
                 <h1>Bonjour,</h1> <br> <h2>Je m'appelle Cassandra Bazille.</h2>
                 <p>Je suis développeuse full-stack et je recherche un stage dans une entreprise à impact. </p>
@@ -43,14 +46,26 @@
     </footer>
 </body>
 <script>
-       document.getElementById('introImage').addEventListener('mouseover', function() {
-            const bubble = this.querySelector('.speech-bubble');
-            bubble.style.opacity = '1';
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    var img = document.querySelector("#introImage img");
+    var direction = 1;
+    var position = 0;
+    var maxPosition = 200; // Distance en pixels à déplacer
+    var speed = 5; // Augmenter cette valeur pour rendre l'animation plus rapide
 
-        document.getElementById('introImage').addEventListener('mouseout', function() {
-            const bubble = this.querySelector('.speech-bubble');
-            bubble.style.opacity = '0';
-        });
+    function animate() {
+        position += direction * speed; // Vitesse du déplacement
+
+        if (position >= maxPosition || position <= 0) {
+            direction *= -1; // Inverser la direction
+        }
+
+        img.style.transform = `translateX(${position}px)`;
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+});
 </script>
 </html>
